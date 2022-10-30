@@ -49,10 +49,7 @@ impl General {
         const PREFIX: &str = "keyword";
         const SECTION: &str = "general";
         vec![
-            format!(
-                "{PREFIX} {SECTION}:{} {}",
-                "border_size\n", self.border_size
-            ),
+            format!("{PREFIX} {SECTION}:{} {}", "border_size", self.border_size),
             format!(
                 "{PREFIX} {SECTION}:{} {}",
                 "no_border_on_floating", self.no_border_on_floating

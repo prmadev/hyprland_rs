@@ -74,6 +74,7 @@ impl Settings {
         commands.append(&mut self.binds.run_commands());
         commands.append(&mut self.debug.run_commands());
         commands.append(&mut self.gestures.run_commands());
+        commands.append(&mut self.decoration.run_commands());
         commands.append(&mut self.input.run_commands());
         commands.append(&mut self.misc.run_commands());
         commands.to_owned()

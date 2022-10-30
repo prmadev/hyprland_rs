@@ -6,12 +6,10 @@
 
 # hyprland_rs
 
-Hyprland WindowManager Configuration library through rust!
+Hyprland Window Manager Configuration library through rust!
 
 hyprland-rs provides rust bindings to generate configuration
 _commands_ which can be sent through hyprland sockets.
-
-
 
 
 Current version: 0.1.0
