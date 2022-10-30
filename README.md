@@ -1,5 +1,5 @@
 <p align="center">
-![hyprland_rs](./assets/logo.png)
+    <img width="200" src="./assets/logo.png" alt="logo">
 </p>
 
 ![Maintenance](https://img.shields.io/badge/maintenance-activly--developed-brightgreen.svg)
