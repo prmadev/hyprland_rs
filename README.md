@@ -1,4 +1,6 @@
+<p align="center">
 ![hyprland_rs](./assets/logo.png)
+</p>
 
 ![Maintenance](https://img.shields.io/badge/maintenance-activly--developed-brightgreen.svg)
 
