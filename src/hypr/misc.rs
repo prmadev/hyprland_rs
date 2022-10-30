@@ -1,5 +1,3 @@
-use std::fmt;
-
 #[derive(Clone)]
 pub struct Misc {
     /// disables the hyprland logo background. :(
