@@ -1,4 +1,4 @@
-mod animation;
+mod animations;
 mod binds;
 mod debug;
 mod decoration;
@@ -6,7 +6,7 @@ mod general;
 mod gestures;
 mod input;
 mod misc;
-pub use animation::*;
+pub use animations::*;
 pub use binds::*;
 pub use debug::*;
 pub use decoration::*;
@@ -18,7 +18,7 @@ pub use misc::*;
 pub struct Settings {
     general: General,
     decoration: Decoration,
-    animation: Animation,
+    animations: Animations,
     binds: Binds,
     debug: Debug,
     gestures: Gestures,
@@ -31,7 +31,7 @@ impl Settings {
         Settings {
             general: General::new(),
             decoration: Decoration::new(),
-            animation: Animation::new(),
+            animations: Animations::new(),
             binds: Binds::new(),
             debug: Debug::new(),
             gestures: Gestures::new(),
@@ -47,8 +47,8 @@ impl Settings {
         &mut self.decoration
     }
 
-    pub fn get_mut_animation(&mut self) -> &mut Animation {
-        &mut self.animation
+    pub fn get_mut_animation(&mut self) -> &mut Animations {
+        &mut self.animations
     }
 
     pub fn get_mut_binds(&mut self) -> &mut Binds {
@@ -70,7 +70,7 @@ impl Settings {
     pub fn run_commands(&mut self) -> Vec<String> {
         let mut commands: Vec<String> = vec![];
         commands.append(&mut self.general.run_commands());
-        commands.append(&mut self.animation.run_commands());
+        commands.append(&mut self.animations.run_commands());
         commands.append(&mut self.binds.run_commands());
         commands.append(&mut self.debug.run_commands());
         commands.append(&mut self.gestures.run_commands());
